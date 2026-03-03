@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- BLACKOUT PROTOCOL: Prevent FOUC -->
+    <style>
+        html {
+            visibility: hidden;
+            opacity: 0;
+            background-color: #000000;
+        }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us — ZLENDER STUDIO</title>
+    <meta name="description"
+        content="ZLENDER is a creative 3D studio specializing in animation, high-quality 3D modeling, and full-scale game development." />
+    <meta property="og:title" content="About Us — ZLENDER STUDIO" />
+    <link rel="icon" type="image/png" href="../assets/website files/New Project (76) (1) (2).png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Preload Critical Video Assets -->
+    <link rel="preload" as="video" href="../assets/website files/White Background 50.mp4" />
+
+    <script type="module" src="../src/main.js"></script>
+
+    <!-- REVEAL SCRIPT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.documentElement.style.visibility = "visible";
+            document.documentElement.style.opacity = "1";
+            document.documentElement.style.transition = "opacity 0.3s ease-in-out";
+        });
+    </script>
+</head>
+
+<body class="bg-black text-white">
+
+    <!-- GLASS NAV -->
+    <nav id="glass-nav" class="glass-nav">
+        <div class="mx-auto flex max-w-7xl items-center justify-between">
+            <a href="/" class="flex items-center">
+                <h2 class="text-xl font-heading font-bold tracking-wider text-white uppercase md:text-2xl">ZLENDER</h2>
+            </a>
+            <div class="hidden items-center gap-8 md:flex">
+                <a href="/"
+                    class="font-body text-sm font-medium text-white/80 transition-colors hover:text-white">Home</a>
+                <a href="/services/"
+                    class="font-body text-sm font-medium text-white/80 transition-colors hover:text-white">Services</a>
+                <a href="/network/"
+                    class="font-body text-sm font-medium text-white/80 transition-colors hover:text-white">Network</a>
+                <a href="/about-us/" class="font-body text-sm font-medium text-white transition-colors">About Us</a>
+            </div>
+            <div class="hidden md:block"><a href="/contact-us/" class="cta-button">REQUEST A QUOTE <span
+                        class="text-base">+</span></a></div>
+            <button id="hamburger" class="hamburger md:hidden"
+                aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div id="mobile-nav" class="mobile-nav">
+        <a href="/">Home</a><a href="/services/">Services</a><a href="/network/">Network</a><a href="/about-us/">About
+            Us</a>
+        <a href="/contact-us/" class="cta-button mt-4">REQUEST A QUOTE <span class="text-base">+</span></a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-video-bg">
+            <video class="lazy-video" data-src="../assets/website files/White Background 50.mp4" muted loop playsinline
+                preload="none" poster="../assets/website files/View 01.jpg"></video>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title" style="font-size: clamp(3rem, 12vw, 10rem);">ABOUT <span class="text-muted">US</span>
+            </h1>
+            <div class="hero-cta"><a href="/contact-us/" class="cta-button cta-button-filled">REQUEST A QUOTE <span
+                        class="text-base">+</span></a></div>
+        </div>
+    </section>
+
+    <!-- WHO ARE WE -->
+    <section class="py-24" style="background: #F5F0EB;">
+        <div class="mx-auto max-w-5xl px-6">
+            <h2 class="mb-4 text-center font-heading text-4xl font-bold uppercase tracking-widest text-black md:text-6xl"
+                data-animate>
+                WHO ARE WE</h2>
+            <p class="mb-12 text-center font-body text-xl font-medium tracking-wide text-gray-600 md:text-2xl"
+                data-animate>
+                We Build Worlds, Stories, and<br />Interactive Experiences
+            </p>
+
+            <div class="space-y-6 font-body text-lg leading-relaxed text-black" data-animate>
+                <p>
+                    <strong class="font-bold">ZLENDER</strong> is a creative 3D studio specializing in
+                    <strong class="font-bold">animation, high-quality 3D modeling, and full-scale game
+                        development</strong>.
+                    We help brands, creators, and studios bring ideas to life through visually compelling content and
+                    technically solid production.
+                </p>
+                <p>
+                    From stylized cartoon animations to immersive game worlds, our work blends
+                    <strong class="font-bold">creativity, precision, and performance</strong> to deliver results that
+                    stand out.
+                </p>
+                <p>
+                    We believe great projects happen when <strong class="font-bold">art and technology work
+                        together</strong>.
+                    That's why our artists and developers collaborate closely as one integrated team — from concept and
+                    design to production and final delivery.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="section-full bg-black py-24">
+        <div class="mx-auto max-w-3xl px-6" data-animate>
+            <h2
+                class="mb-12 text-center font-heading text-3xl font-bold tracking-widest text-white uppercase md:text-5xl">
+                WHAT WE STAND FOR</h2>
+            <ul class="mx-auto max-w-lg space-y-6 font-body text-base text-gray-300 md:text-lg">
+                <li class="flex items-center gap-4"><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white"></span>
+                    Reliable communication and fast turnaround</li>
+                <li class="flex items-center gap-4"><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white"></span>
+                    Strong focus on visual quality and performance</li>
+                <li class="flex items-center gap-4"><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white"></span>
+                    Long-term mindset, not just one-off delivery</li>
+            </ul>
+            <p class="mt-12 text-center font-body text-lg text-white md:text-xl">
+                Our goal is simple: create work we're proud of and clients can rely on.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section bg-card">
+        <div class="mx-auto max-w-3xl text-center" data-animate>
+            <h2 class="mb-6 font-heading text-3xl font-bold text-white uppercase md:text-5xl">Let's Create Something
+                Extraordinary</h2>
+            <p class="mb-8 font-body text-base text-muted">
+                If you're looking for a studio that cares about your project as much as you do — ZLENDER is ready.
+            </p>
+            <a href="/contact-us/" class="cta-button cta-button-filled text-sm">REQUEST A QUOTE <span
+                    class="text-base">+</span></a>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="section bg-surface">
+        <div class="mx-auto max-w-2xl">
+            <h2 class="mb-2 text-center font-heading text-3xl font-bold text-white uppercase md:text-4xl" data-animate>
+                REQUEST A PROJECT QUOTE</h2>
+            <p class="mb-10 text-center font-body text-sm text-muted" data-animate>Let's Bring Your Idea to Life.</p>
+            <iframe name="hidden_iframe_aboutus" id="hidden_iframe_aboutus" style="display:none;"
+                onload="if(this.submitted) { window.showSuccessPopup('Thank you! Your project quote request has been received.'); this.submitted=false; document.getElementById('aboutus-form').reset(); }"></iframe>
+            <form id="aboutus-form"
+                action="https://docs.google.com/forms/d/e/1FAIpQLSeZA01aOnXrqvzL4pC2diIDxa7UDMcYoc6qvo4DHzyAk2QB1g/formResponse"
+                method="POST" target="hidden_iframe_aboutus"
+                onsubmit="const hp = document.getElementById('confirm_email_aboutus'); if(hp && hp.value !== '') { return false; } if(!window.checkRateLimit('aboutus-form')) { return false; } document.getElementById('hidden_iframe_aboutus').submitted=true;"
+                class="space-y-5" data-animate>
+
+                <!-- BOT HONEYPOT -->
+                <div style="display:none;" aria-hidden="true">
+                    <label for="confirm_email_aboutus">Leave this field empty</label>
+                    <input type="text" id="confirm_email_aboutus" name="confirm_email" tabindex="-1" />
+                </div>
+                <div><label
+                        class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Name</label>
+                    <input name="entry.1227890993" type="text" required
+                        class="w-full rounded-xl border border-border bg-card px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30"
+                        placeholder="Full Name" />
+                </div>
+                <div><label
+                        class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Email</label>
+                    <input name="entry.1316634230" type="email" required
+                        class="w-full rounded-xl border border-border bg-card px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30"
+                        placeholder="Example@Gmail.com" />
+                </div>
+                <div><label class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Project
+                        Title</label>
+                    <input name="entry.1856353974" type="text" required
+                        class="w-full rounded-xl border border-border bg-card px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30"
+                        placeholder="Project Title" />
+                </div>
+                <div><label class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Project
+                        Details</label>
+                    <textarea name="entry.1398881846" rows="5" required
+                        class="w-full resize-none rounded-xl border border-border bg-card px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30"
+                        placeholder="Share Your Project Requirement!"></textarea>
+                </div>
+                <div class="flex items-center gap-3"><input name="newsletter" type="checkbox"
+                        class="h-4 w-4 rounded border-border bg-surface accent-white" /><label
+                        class="font-body text-xs text-muted">Subscribe to Newsletter</label></div>
+                <button type="submit"
+                    class="cta-button cta-button-filled w-full justify-center py-3 text-sm">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-border bg-surface py-12">
+        <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 md:grid-cols-4">
+            <div>
+                <h2 class="mb-4 font-heading text-2xl font-bold text-white uppercase">ZLENDER</h2>
+                <p class="font-body text-sm text-muted">Creative 3D studio specializing in animation, modeling, and game
+                    development.</p>
+            </div>
+            <div>
+                <h4 class="mb-4 font-heading text-xs font-bold uppercase tracking-wider text-white">Navigation</h4>
+                <ul class="space-y-2 font-body text-sm text-muted">
+                    <li><a href="/services/" class="transition hover:text-white">Services</a></li>
+                    <li><a href="/network/" class="transition hover:text-white">Network</a></li>
+                    <li><a href="/about-us/" class="transition hover:text-white">About Us</a></li>
+                    <li><a href="/contact-us/" class="transition hover:text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="mb-4 font-heading text-xs font-bold uppercase tracking-wider text-white">Platforms</h4>
+                <ul class="space-y-2 font-body text-sm text-muted">
+                    <li><a href="https://wa.me/971542141050" target="_blank" rel="noopener"
+                            class="transition hover:text-white">WhatsApp</a></li>
+                    <li><a href="https://www.freelancer.com/u/ZlenderShop" target="_blank" rel="noopener"
+                            class="transition hover:text-white">Freelancer Page</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="mb-4 font-heading text-xs font-bold uppercase tracking-wider text-white">Social</h4>
+                <div class="flex gap-4">
+                    <a href="https://www.instagram.com/zlender.studio/" target="_blank" rel="noopener"
+                        class="flex h-10 w-10 items-center justify-center rounded-full border border-border transition hover:border-white/30"><img
+                            src="../assets/website files/Instagram_icon.png" alt="Instagram"
+                            class="h-5 w-5 object-contain" /></a>
+                    <a href="https://www.tiktok.com/@zlender.studio" target="_blank" rel="noopener"
+                        class="flex h-10 w-10 items-center justify-center rounded-full border border-border transition hover:border-white/30"><img
+                            src="../assets/website files/tiktok-logo-tik-tok-logo-icon-png-svg.png" alt="TikTok"
+                            class="h-5 w-5 object-contain" /></a>
+                    <a href="https://wa.me/971542141050" target="_blank" rel="noopener"
+                        class="flex h-10 w-10 items-center justify-center rounded-full border border-border transition hover:border-white/30"><img
+                            src="../assets/website files/whatsapp-logo-png_seeklogo-168310 (1).png" alt="WhatsApp"
+                            class="h-5 w-5 object-contain" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="mx-auto mt-10 max-w-7xl border-t border-border px-6 pt-6">
+            <p class="text-center font-body text-xs text-muted">© 2026 Zlender Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

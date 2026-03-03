@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- BLACKOUT PROTOCOL: Prevent FOUC -->
+    <style>
+        html {
+            visibility: hidden;
+            opacity: 0;
+            background-color: #000000;
+        }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services — ZLENDER STUDIO</title>
+    <meta name="description"
+        content="ZLENDER delivers end-to-end creative solutions across animation, 3D design, and interactive game development." />
+    <meta property="og:title" content="Services — ZLENDER STUDIO" />
+    <meta property="og:description" content="3D Animation, Modeling & Game Development Services" />
+    <link rel="icon" type="image/png" href="../assets/website files/New Project (76) (1) (2).png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Preload Critical Video Assets -->
+    <link rel="preload" as="video" href="../assets/website files/Eagle Final 50.mp4" media="(min-width: 768px)" />
+    <link rel="preload" as="video" href="../assets/website files/EAGLE VERTICAL TO PUT ON WEB.mp4"
+        media="(max-width: 767px)" />
+
+    <script type="module" src="../src/main.js"></script>
+
+    <!-- REVEAL SCRIPT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.documentElement.style.visibility = "visible";
+            document.documentElement.style.opacity = "1";
+            document.documentElement.style.transition = "opacity 0.3s ease-in-out";
+        });
+    </script>
+</head>
+
+<body class="bg-black text-white">
+
+    <!-- GLASS NAV -->
+    <nav id="glass-nav" class="glass-nav">
+        <div class="mx-auto flex max-w-7xl items-center justify-between">
+            <a href="/" class="flex items-center">
+                <h2 class="text-xl font-heading font-bold tracking-wider text-white uppercase md:text-2xl">ZLENDER</h2>
+            </a>
+            <div class="hidden items-center gap-8 md:flex">
+                <a href="/"
+                    class="font-body text-sm font-medium text-white/80 transition-colors hover:text-white">Home</a>
+                <a href="/services/" class="font-body text-sm font-medium text-white transition-colors">Services</a>
+                <a href="/network/"
+                    class="font-body text-sm font-medium text-white/80 transition-colors hover:text-white">Network</a>
+                <a href="/about-us/"
+                    class="font-body text-sm font-medium text-white/80 transition-colors hover:text-white">About Us</a>
+            </div>
+            <div class="hidden md:block"><a href="/contact-us/" class="cta-button">REQUEST A QUOTE <span
+                        class="text-base">+</span></a></div>
+            <button id="hamburger" class="hamburger md:hidden"
+                aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div id="mobile-nav" class="mobile-nav">
+        <a href="/">Home</a><a href="/services/">Services</a><a href="/network/">Network</a><a href="/about-us/">About
+            Us</a>
+        <a href="/contact-us/" class="cta-button mt-4">REQUEST A QUOTE <span class="text-base">+</span></a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-video-bg">
+            <video class="lazy-video" data-src-mobile="../assets/website files/EAGLE VERTICAL TO PUT ON WEB.mp4"
+                data-src-desktop="../assets/website files/Eagle Final 50.mp4" muted loop playsinline preload="none"
+                poster="../assets/website files/Screenshot_2024-10-22_033750.png"></video>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">SERVICES</h1>
+            <p class="hero-subtitle">Where Ideas Come Alive in 3D, Animation & Interactive Worlds</p>
+            <div class="hero-cta"><a href="/contact-us/" class="cta-button cta-button-filled">REQUEST A QUOTE <span
+                        class="text-base">+</span></a></div>
+        </div>
+    </section>
+
+    <!-- WHAT WE DO -->
+    <section class="section bg-surface">
+        <p class="mb-4 text-center font-mono text-xs font-medium uppercase tracking-[0.25em] text-muted" data-animate>
+            WHAT WE DO</p>
+        <h2 class="mb-6 text-center font-heading text-3xl font-bold text-white uppercase md:text-5xl" data-animate>
+            3D Animation, Modeling &<br />Game Development Services
+        </h2>
+        <p class="mx-auto mb-16 max-w-4xl text-center font-body text-base leading-relaxed text-muted" data-animate>
+            ZLENDER delivers end-to-end creative solutions across animation, 3D design, and interactive game
+            development.
+            We specialize in transforming ideas into visually striking, technically solid experiences that engage
+            audiences
+            and perform across platforms. Our services cover everything from character and environment creation to
+            cinematic
+            animation, real-time gameplay systems, and full game production.
+        </p>
+    </section>
+
+    <!-- GAME DEVELOPMENT SERVICES -->
+    <section class="section-full bg-card">
+        <div class="mx-auto max-w-7xl px-6">
+            <h2 class="mb-8 font-heading text-3xl font-bold text-white uppercase md:text-4xl" data-animate>Game
+                Development Services</h2>
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+                <div data-animate>
+                    <p class="font-body text-base leading-relaxed text-muted">
+                        Our game development services cover stylized and immersive experiences across indie, casual, and
+                        mid-core projects for PC, mobile, and cross-platform builds. We support your vision from early
+                        concept to final release, delivering custom gameplay systems, polished mechanics, and optimized
+                        builds tailored to your platform and production goals.
+                    </p>
+                    <p class="mt-4 font-body text-base leading-relaxed text-muted">
+                        Working with modern engines and efficient pipelines, our developers and artists collaborate
+                        closely to prototype quickly, iterate intelligently, and refine gameplay without sacrificing
+                        performance or visual quality — ensuring a smooth, scalable development process from start to
+                        finish.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                    <div class="rounded-2xl border border-border bg-surface p-5" data-animate>
+                        <h4 class="mb-2 font-heading text-sm font-bold text-white uppercase">Full Game Development</h4>
+                    </div>
+                    <div class="rounded-2xl border border-border bg-surface p-5" data-animate>
+                        <h4 class="mb-2 font-heading text-sm font-bold text-white uppercase">Environment & Level Design
+                        </h4>
+                    </div>
+                    <div class="rounded-2xl border border-border bg-surface p-5" data-animate>
+                        <h4 class="mb-2 font-heading text-sm font-bold text-white uppercase">VR Meta Development</h4>
+                    </div>
+                    <div class="rounded-2xl border border-border bg-surface p-5" data-animate>
+                        <h4 class="mb-2 font-heading text-sm font-bold text-white uppercase">Character Design &
+                            Animation</h4>
+                    </div>
+                    <div class="rounded-2xl border border-border bg-surface p-5" data-animate>
+                        <h4 class="mb-2 font-heading text-sm font-bold text-white uppercase">Gameplay Systems &
+                            Mechanics</h4>
+                    </div>
+                    <div class="rounded-2xl border border-border bg-surface p-5" data-animate>
+                        <h4 class="mb-2 font-heading text-sm font-bold text-white uppercase">Performance Optimisations
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANIMATION SERVICES -->
+    <section class="section-full bg-black py-24">
+        <div class="mx-auto max-w-5xl px-6" data-animate>
+            <h2 class="font-heading text-3xl font-bold tracking-widest text-white uppercase md:text-5xl lg:text-6xl">
+                ANIMATION SERVICES WE PROVIDE</h2>
+            <div class="mt-6 flex md:justify-end">
+                <p class="max-w-2xl font-body text-sm leading-relaxed text-gray-400 md:text-base">
+                    Our 3D animation services focus on creating expressive cartoon animations, cinematic sequences,
+                    and character-driven content designed to engage and tell strong visual stories.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D MODELING SERVICES -->
+    <section class="section-full border-t border-white/5 bg-[#0A0A0A] py-24">
+        <div class="mx-auto max-w-5xl px-6">
+            <h2 class="mb-12 font-heading text-3xl font-bold tracking-widest text-white uppercase md:text-5xl"
+                data-animate>3D MODELING AND DESIGN SERVICES</h2>
+            <div class="grid grid-cols-1 gap-x-12 gap-y-6 md:grid-cols-2">
+                <div class="rounded-full border border-white/10 bg-transparent px-6 py-3 transition hover:border-white/30"
+                    data-animate>
+                    <p class="font-body text-sm font-medium text-white">Character creation</p>
+                </div>
+                <div class="rounded-full border border-white/10 bg-transparent px-6 py-3 transition hover:border-white/30"
+                    data-animate>
+                    <p class="font-body text-sm font-medium text-white">Realistic Product</p>
+                </div>
+                <div class="rounded-full border border-white/10 bg-transparent px-6 py-3 transition hover:border-white/30"
+                    data-animate>
+                    <p class="font-body text-sm font-medium text-white">Animatable Character</p>
+                </div>
+                <div class="rounded-full border border-white/10 bg-transparent px-6 py-3 transition hover:border-white/30"
+                    data-animate>
+                    <p class="font-body text-sm font-medium text-white">3D Printable Models</p>
+                </div>
+                <div class="rounded-full border border-white/10 bg-transparent px-6 py-3 transition hover:border-white/30"
+                    data-animate>
+                    <p class="font-body text-sm font-medium text-white">Environment & Map Design</p>
+                </div>
+                <div class="rounded-full border border-white/10 bg-transparent px-6 py-3 transition hover:border-white/30"
+                    data-animate>
+                    <p class="font-body text-sm font-medium text-white">Weapons, props & objects assets</p>
+                </div>
+                <div class="rounded-full border border-white/10 bg-transparent px-6 py-3 transition hover:border-white/30"
+                    data-animate>
+                    <p class="font-body text-sm font-medium text-white">Sculpture Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="section bg-surface">
+        <div class="mx-auto max-w-3xl rounded-3xl border border-border bg-card p-8 md:p-12" data-animate>
+            <p class="mb-6 font-body text-base italic leading-relaxed text-white/90 md:text-lg">
+                "Huge shoutout to zlender for crafting the hand tossing animation—it's smooth, immersive, and perfectly
+                timed. The motion feels natural, the loop logic is flawless, and it adds a cinematic touch that elevates
+                the entire gameplay experience. He nailed the physics, easing, and thematic vibe with precision. This
+                isn't just animation—it's emotional polish. If you need motion that resonates, zlender delivers. Team
+                move FAST!! Thanks Jawad B"
+            </p>
+            <p class="font-heading text-sm font-bold text-muted uppercase">— Darius F</p>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="section bg-card">
+        <div class="mx-auto max-w-2xl">
+            <h2 class="mb-2 text-center font-heading text-3xl font-bold text-white uppercase md:text-4xl" data-animate>
+                REQUEST A PROJECT QUOTE</h2>
+            <p class="mb-10 text-center font-body text-sm text-muted" data-animate>
+                Let's Bring Your Idea to Life. Tell us about your project and goals.
+            </p>
+            <iframe name="hidden_iframe_services" id="hidden_iframe_services" style="display:none;"
+                onload="if(this.submitted) { window.showSuccessPopup('Thank you! Your project quote request has been received.'); this.submitted=false; document.getElementById('services-form').reset(); }"></iframe>
+            <form id="services-form"
+                action="https://docs.google.com/forms/d/e/1FAIpQLSeZA01aOnXrqvzL4pC2diIDxa7UDMcYoc6qvo4DHzyAk2QB1g/formResponse"
+                method="POST" target="hidden_iframe_services"
+                onsubmit="const hp = document.getElementById('confirm_email_services'); if(hp && hp.value !== '') { return false; } if(!window.checkRateLimit('services-form')) { return false; } document.getElementById('hidden_iframe_services').submitted=true;"
+                class="space-y-5" data-animate>
+
+                <!-- BOT HONEYPOT -->
+                <div style="display:none;" aria-hidden="true">
+                    <label for="confirm_email_services">Leave this field empty</label>
+                    <input type="text" id="confirm_email_services" name="confirm_email" tabindex="-1" />
+                </div>
+                <div><label
+                        class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Name</label>
+                    <input name="entry.1227890993" type="text" required
+                        class="w-full rounded-xl border border-border bg-surface px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30"
+                        placeholder="Full Name" />
+                </div>
+                <div><label
+                        class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Email</label>
+                    <input name="entry.1316634230" type="email" required
+                        class="w-full rounded-xl border border-border bg-surface px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30"
+                        placeholder="Example@Gmail.com" />
+                </div>
+                <div><label class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Project
+                        Title</label>
+                    <input name="entry.1856353974" type="text" required
+                        class="w-full rounded-xl border border-border bg-surface px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30"
+                        placeholder="Project Title" />
+                </div>
+                <div><label class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Project
+                        Details</label>
+                    <textarea name="entry.1398881846" rows="5" required
+                        class="w-full resize-none rounded-xl border border-border bg-surface px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30"
+                        placeholder="Share Your Project Requirement!"></textarea>
+                </div>
+                <div class="flex items-center gap-3"><input name="newsletter" type="checkbox"
+                        class="h-4 w-4 rounded border-border bg-surface accent-white" /><label
+                        class="font-body text-xs text-muted">Subscribe to Newsletter</label></div>
+                <button type="submit"
+                    class="cta-button cta-button-filled w-full justify-center py-3 text-sm">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-border bg-surface py-12">
+        <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 md:grid-cols-4">
+            <div>
+                <h2 class="mb-4 font-heading text-2xl font-bold text-white uppercase">ZLENDER</h2>
+                <p class="font-body text-sm text-muted">Creative 3D studio specializing in animation, modeling, and game
+                    development.</p>
+            </div>
+            <div>
+                <h4 class="mb-4 font-heading text-xs font-bold uppercase tracking-wider text-white">Navigation</h4>
+                <ul class="space-y-2 font-body text-sm text-muted">
+                    <li><a href="/services/" class="transition hover:text-white">Services</a></li>
+                    <li><a href="/network/" class="transition hover:text-white">Network</a></li>
+                    <li><a href="/about-us/" class="transition hover:text-white">About Us</a></li>
+                    <li><a href="/contact-us/" class="transition hover:text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="mb-4 font-heading text-xs font-bold uppercase tracking-wider text-white">Platforms</h4>
+                <ul class="space-y-2 font-body text-sm text-muted">
+                    <li><a href="https://wa.me/971542141050" target="_blank" rel="noopener"
+                            class="transition hover:text-white">WhatsApp</a></li>
+                    <li><a href="https://www.freelancer.com/u/ZlenderShop" target="_blank" rel="noopener"
+                            class="transition hover:text-white">Freelancer Page</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="mb-4 font-heading text-xs font-bold uppercase tracking-wider text-white">Social</h4>
+                <div class="flex gap-4">
+                    <a href="https://www.instagram.com/zlender.studio/" target="_blank" rel="noopener"
+                        class="flex h-10 w-10 items-center justify-center rounded-full border border-border transition hover:border-white/30"><img
+                            src="../assets/website files/Instagram_icon.png" alt="Instagram"
+                            class="h-5 w-5 object-contain" /></a>
+                    <a href="https://www.tiktok.com/@zlender.studio" target="_blank" rel="noopener"
+                        class="flex h-10 w-10 items-center justify-center rounded-full border border-border transition hover:border-white/30"><img
+                            src="../assets/website files/tiktok-logo-tik-tok-logo-icon-png-svg.png" alt="TikTok"
+                            class="h-5 w-5 object-contain" /></a>
+                    <a href="https://wa.me/971542141050" target="_blank" rel="noopener"
+                        class="flex h-10 w-10 items-center justify-center rounded-full border border-border transition hover:border-white/30"><img
+                            src="../assets/website files/whatsapp-logo-png_seeklogo-168310 (1).png" alt="WhatsApp"
+                            class="h-5 w-5 object-contain" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="mx-auto mt-10 max-w-7xl border-t border-border px-6 pt-6">
+            <p class="text-center font-body text-xs text-muted">© 2026 Zlender Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

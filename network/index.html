@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- BLACKOUT PROTOCOL: Prevent FOUC -->
+    <style>
+        html {
+            visibility: hidden;
+            opacity: 0;
+            background-color: #000000;
+        }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Network — ZLENDER STUDIO</title>
+    <meta name="description"
+        content="Connect with ZLENDER Studio. Find us on Freelancer, Instagram, TikTok, and more." />
+    <meta property="og:title" content="Network — ZLENDER STUDIO" />
+    <link rel="icon" type="image/png" href="../assets/website files/New Project (76) (1) (2).png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Preload Critical Video Assets -->
+    <link rel="preload" as="video" href="../assets/website files/Networking New 50.mp4" media="(min-width: 768px)" />
+    <link rel="preload" as="video" href="../assets/website files/networking new phone.mp4" media="(max-width: 767px)" />
+
+    <script type="module" src="../src/main.js"></script>
+
+    <!-- REVEAL SCRIPT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.documentElement.style.visibility = "visible";
+            document.documentElement.style.opacity = "1";
+            document.documentElement.style.transition = "opacity 0.3s ease-in-out";
+        });
+    </script>
+</head>
+
+<body class="bg-black text-white">
+
+    <!-- GLASS NAV -->
+    <nav id="glass-nav" class="glass-nav">
+        <div class="mx-auto flex max-w-7xl items-center justify-between">
+            <a href="/" class="flex items-center">
+                <h2 class="text-xl font-heading font-bold tracking-wider text-white uppercase md:text-2xl">ZLENDER</h2>
+            </a>
+            <div class="hidden items-center gap-8 md:flex">
+                <a href="/"
+                    class="font-body text-sm font-medium text-white/80 transition-colors hover:text-white">Home</a>
+                <a href="/services/"
+                    class="font-body text-sm font-medium text-white/80 transition-colors hover:text-white">Services</a>
+                <a href="/network/" class="font-body text-sm font-medium text-white transition-colors">Network</a>
+                <a href="/about-us/"
+                    class="font-body text-sm font-medium text-white/80 transition-colors hover:text-white">About Us</a>
+            </div>
+            <div class="hidden md:block"><a href="/contact-us/" class="cta-button">REQUEST A QUOTE <span
+                        class="text-base">+</span></a></div>
+            <button id="hamburger" class="hamburger md:hidden"
+                aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div id="mobile-nav" class="mobile-nav">
+        <a href="/">Home</a><a href="/services/">Services</a><a href="/network/">Network</a><a href="/about-us/">About
+            Us</a>
+        <a href="/contact-us/" class="cta-button mt-4">REQUEST A QUOTE <span class="text-base">+</span></a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-video-bg">
+            <video class="lazy-video" data-src-mobile="../assets/website files/networking new phone.mp4"
+                data-src-desktop="../assets/website files/Networking New 50.mp4" muted loop playsinline preload="none"
+                poster="../assets/website files/Screenshot_2024-10-22_034406.png"></video>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title" style="font-size: clamp(2rem, 8vw, 5rem);">Connect With ZLENDER</h1>
+            <div class="hero-cta"><a href="/contact-us/" class="cta-button cta-button-filled">REQUEST A QUOTE <span
+                        class="text-base">+</span></a></div>
+        </div>
+    </section>
+
+    <!-- CHECKOUT OUR SOCIALS -->
+    <section class="section bg-surface">
+        <h2 class="mb-12 text-center font-heading text-3xl font-bold text-white uppercase md:text-5xl" data-animate>
+            Checkout Our <span class="text-muted">Socials</span>
+        </h2>
+
+        <div class="mx-auto grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-2">
+            <!-- Freelancer -->
+            <a href="https://www.freelancer.com/u/ZlenderShop" target="_blank" rel="noopener"
+                class="group flex items-center gap-4 rounded-2xl border border-border bg-card p-6 transition hover:border-white/20"
+                data-animate>
+                <img src="../assets/website files/freelancer_logo_icon_171122.png" alt="Freelancer"
+                    class="h-10 w-10 object-contain" />
+                <div>
+                    <h3 class="font-heading text-lg font-bold text-white uppercase">Freelancer</h3>
+                    <p class="font-body text-xs text-muted">View our profile</p>
+                </div>
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/zlender.studio/" target="_blank" rel="noopener"
+                class="group flex items-center gap-4 rounded-2xl border border-border bg-card p-6 transition hover:border-white/20"
+                data-animate>
+                <img src="../assets/website files/Instagram_icon.png" alt="Instagram"
+                    class="h-10 w-10 object-contain" />
+                <div>
+                    <h3 class="font-heading text-lg font-bold text-white uppercase">Instagram</h3>
+                    <p class="font-body text-xs text-muted">Follow us</p>
+                </div>
+            </a>
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@zlender.studio?lang=en" target="_blank" rel="noopener"
+                class="group flex items-center gap-4 rounded-2xl border border-border bg-card p-6 transition hover:border-white/20"
+                data-animate>
+                <img src="../assets/website files/tiktok-logo-tik-tok-logo-icon-png-svg.png" alt="TikTok"
+                    class="h-10 w-10 object-contain" />
+                <div>
+                    <h3 class="font-heading text-lg font-bold text-white uppercase">TikTok</h3>
+                    <p class="font-body text-xs text-muted">Watch our content</p>
+                </div>
+            </a>
+            <!-- Gmail -->
+            <a href="/contact-us/"
+                class="group flex items-center gap-4 rounded-2xl border border-border bg-card p-6 transition hover:border-white/20"
+                data-animate>
+                <img src="../assets/website files/Gmail_icon_(2020).svg.webp" alt="Gmail"
+                    class="h-10 w-10 object-contain" />
+                <div>
+                    <h3 class="font-heading text-lg font-bold text-white uppercase">Gmail</h3>
+                    <p class="font-body text-xs text-muted">Contact us</p>
+                </div>
+            </a>
+        </div>
+
+        <p class="mx-auto mt-10 max-w-2xl text-center font-body text-base text-muted" data-animate>
+            This is where we share our latest work, behind-the-scenes moments, and creative updates.
+            Follow us to stay connected, see what we're building, and reach out directly.
+        </p>
+    </section>
+
+    <!-- WHATSAPP & EMAIL -->
+    <section class="section-full bg-card">
+        <div class="mx-auto grid max-w-4xl grid-cols-1 gap-6 px-6 md:grid-cols-2">
+            <!-- WhatsApp -->
+            <div class="rounded-2xl border border-border bg-surface p-8" data-animate>
+                <h3 class="mb-2 font-heading text-xl font-bold text-white uppercase">WhatsApp</h3>
+                <p class="mb-6 font-body text-sm text-muted">Chat with us on WhatsApp for quick questions, project
+                    discussions, or immediate assistance.</p>
+                <a href="https://wa.me/+971542141050" target="_blank" rel="noopener"
+                    class="cta-button cta-button-filled text-sm">CHAT WITH US</a>
+            </div>
+            <!-- Email -->
+            <div class="rounded-2xl border border-border bg-surface p-8" data-animate>
+                <h3 class="mb-2 font-heading text-xl font-bold text-white uppercase">Email</h3>
+                <p class="mb-4 font-body text-sm text-muted">For detailed inquiries, proposals, or collaboration
+                    requests, email is the best option.</p>
+                <a href="mailto:jawad@zlender.studio" class="cta-button cta-button-filled text-sm">EMAIL US</a>
+                <p class="mt-3 font-mono text-xs text-muted">jawad@zlender.studio</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Removed Contact Form per request -->
+
+    <!-- HIRING -->
+    <section id="hiring" class="section-full bg-card">
+        <div class="mx-auto max-w-2xl px-6">
+            <h2 class="mb-8 text-center font-heading text-3xl font-bold text-white uppercase md:text-4xl" data-animate>
+                WE ARE HIRING</h2>
+            <iframe name="hidden_iframe_network" id="hidden_iframe_network" style="display:none;"
+                onload="if(this.submitted) { window.showSuccessPopup('Thank you! Your application has been successfully sent.'); this.submitted=false; document.getElementById('hiring-form').reset(); }"></iframe>
+            <form id="hiring-form"
+                action="https://docs.google.com/forms/d/e/1FAIpQLScYUqQCttVItsnMxJCFQSd93prLkFoJC3tD3PKZB7eC2YVTrA/formResponse"
+                method="POST" target="hidden_iframe_network"
+                onsubmit="const hp = document.getElementById('confirm_email_hiring'); if(hp && hp.value !== '') { return false; } if(!window.checkRateLimit('hiring-form')) { return false; } document.getElementById('hidden_iframe_network').submitted=true;"
+                class="space-y-5" data-animate>
+
+                <!-- BOT HONEYPOT -->
+                <div style="display:none;" aria-hidden="true">
+                    <label for="confirm_email_hiring">Leave this field empty</label>
+                    <input type="text" id="confirm_email_hiring" name="confirm_email" tabindex="-1" />
+                </div>
+                <div><label
+                        class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Name</label>
+                    <input name="entry.582632637" type="text" required
+                        class="w-full rounded-xl border border-border bg-surface px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30"
+                        placeholder="Full Name" />
+                </div>
+                <div><label
+                        class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Email</label>
+                    <input name="entry.1923901227" type="email" required
+                        class="w-full rounded-xl border border-border bg-surface px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30"
+                        placeholder="Example@Gmail.com" />
+                </div>
+                <div><label class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Role
+                        You're Applying For</label>
+                    <input name="entry.670505598" type="text" required
+                        class="w-full rounded-xl border border-border bg-surface px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30"
+                        placeholder="e.g. 3D Animator" />
+                </div>
+                <div><label
+                        class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Proposal</label>
+                    <textarea name="entry.1139788045" rows="5" required
+                        class="w-full resize-none rounded-xl border border-border bg-surface px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30"
+                        placeholder="Tell us about yourself and why you'd be a great fit..."></textarea>
+                </div>
+                <button type="submit"
+                    class="cta-button cta-button-filled w-full justify-center py-3 text-sm">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-border bg-surface py-12">
+        <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 md:grid-cols-4">
+            <div>
+                <h2 class="mb-4 font-heading text-2xl font-bold text-white uppercase">ZLENDER</h2>
+                <p class="font-body text-sm text-muted">Creative 3D studio specializing in animation, modeling, and game
+                    development.</p>
+            </div>
+            <div>
+                <h4 class="mb-4 font-heading text-xs font-bold uppercase tracking-wider text-white">Navigation</h4>
+                <ul class="space-y-2 font-body text-sm text-muted">
+                    <li><a href="/services/" class="transition hover:text-white">Services</a></li>
+                    <li><a href="/network/" class="transition hover:text-white">Network</a></li>
+                    <li><a href="/about-us/" class="transition hover:text-white">About Us</a></li>
+                    <li><a href="/contact-us/" class="transition hover:text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="mb-4 font-heading text-xs font-bold uppercase tracking-wider text-white">Platforms</h4>
+                <ul class="space-y-2 font-body text-sm text-muted">
+                    <li><a href="https://wa.me/971542141050" target="_blank" rel="noopener"
+                            class="transition hover:text-white">WhatsApp</a></li>
+                    <li><a href="https://www.freelancer.com/u/ZlenderShop" target="_blank" rel="noopener"
+                            class="transition hover:text-white">Freelancer Page</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="mb-4 font-heading text-xs font-bold uppercase tracking-wider text-white">Social</h4>
+                <div class="flex gap-4">
+                    <a href="https://www.instagram.com/zlender.studio/" target="_blank" rel="noopener"
+                        class="flex h-10 w-10 items-center justify-center rounded-full border border-border transition hover:border-white/30"><img
+                            src="../assets/website files/Instagram_icon.png" alt="Instagram"
+                            class="h-5 w-5 object-contain" /></a>
+                    <a href="https://www.tiktok.com/@zlender.studio" target="_blank" rel="noopener"
+                        class="flex h-10 w-10 items-center justify-center rounded-full border border-border transition hover:border-white/30"><img
+                            src="../assets/website files/tiktok-logo-tik-tok-logo-icon-png-svg.png" alt="TikTok"
+                            class="h-5 w-5 object-contain" /></a>
+                    <a href="https://wa.me/971542141050" target="_blank" rel="noopener"
+                        class="flex h-10 w-10 items-center justify-center rounded-full border border-border transition hover:border-white/30"><img
+                            src="../assets/website files/whatsapp-logo-png_seeklogo-168310 (1).png" alt="WhatsApp"
+                            class="h-5 w-5 object-contain" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="mx-auto mt-10 max-w-7xl border-t border-border px-6 pt-6">
+            <p class="text-center font-body text-xs text-muted">© 2026 Zlender Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

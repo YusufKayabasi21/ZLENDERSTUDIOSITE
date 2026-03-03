@@ -1,0 +1,52 @@
+Project Type: Framer-to-Vercel Migration
+Base Architecture: Magnetto Template (FTC Studio)
+
+🎨 1. Visual Identity (Color Palette)
+The site follows a "High-Contrast Dark" theme designed to make 3D renders pop.
+
+Element	Hex Code	Purpose
+Primary Background	#000000	Main canvas background.
+Secondary Background	#0A0A0A	Section backgrounds / Card backgrounds.
+Primary Text	#FFFFFF	Headlines and high-priority copy.
+Secondary Text	#A1A1A1	Subtext, labels, and paragraph body.
+Accent / Glass	rgba(255, 255, 255, 0.05)	Border/Glassmorphism effect for cards and nav.
+Border Color	#1A1A1A	Subtle dividers and grid lines.
+
+Export to Sheets
+
+🔡 2. Typography (Design System)
+Based on the Magnetto design system and the "Zlender" branding choice:
+
+Heading Font (H1, H2, H3): "Clash Display" or "Slender" (Custom/Display Serif).
+
+Note: Given the name "Zlender," it is highly likely they are using a display font with high contrast between thick and thin strokes (Didone style).
+
+Body Font (Paragraphs, UI): "Inter" (Variable).
+
+Weights: 400 (Regular), 500 (Medium), 600 (Semi-bold).
+
+Monospace (Metadata/Buttons): "JetBrains Mono" or "SF Mono".
+
+🚀 3. Technical Stack Recovery
+Original Engine: Framer (React-based).
+
+Animation Engine: Framer Motion.
+
+Scroll Logic: Native Framer Scroll + Intersection Observer for video triggers.
+
+Media Types: * Backgrounds: .mp4 (H.264/H.265) and .webm.
+
+Static Assets: .webp (optimized for fast loading).
+
+Icons: .svg (vector-based).
+
+🧩 4. Component Mapping
+Navigation: Sticky Glassmorphism header. Transitions from transparent to dark-blur on scroll.
+
+Hero Section: Full-screen width. Centered typography over a high-res 3D video loop.
+
+Service Grid: 2x2 or 3x1 grid with "hover-tilt" or "hover-glow" effects.
+
+Showreel: Integrated video player with custom play/pause UI.
+
+Contact: Modern minimal form (to be re-plumbed to Formspree or Getform).

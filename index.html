@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- BLACKOUT PROTOCOL: Prevent FOUC -->
+  <style>
+    html {
+      visibility: hidden;
+      opacity: 0;
+      background-color: #000000;
+    }
+  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>ZLENDER STUDIO — Creative 3D Animation, Modeling & Game Development</title>
+  <meta name="description"
+    content="ZLENDER is a creative studio specializing in full game development, high-quality animation, and professional 3D modeling. We transform ideas into immersive worlds, cinematic visuals, and interactive experiences through creativity and dedication." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ZLENDER STUDIO" />
+  <meta property="og:description"
+    content="ZLENDER is a creative studio specializing in full game development, high-quality animation, and professional 3D modeling. We transform ideas into immersive worlds, cinematic visuals, and interactive experiences through creativity and dedication." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.zlender.studio/" />
+  <meta property="og:image" content="./assets/website files/1707397405_logocom.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/website files/New Project (76) (1) (2).png" />
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Preload Critical Video Assets to minimize black frame -->
+  <link rel="preload" as="video" href="./assets/website files/Video To Plug 50.mp4" media="(min-width: 768px)" />
+  <link rel="preload" as="video" href="./assets/website files/Phone Logo 50.mp4" media="(max-width: 767px)" />
+
+  <!-- Main CSS + JS -->
+  <script type="module" src="./src/main.js"></script>
+
+  <!-- REVEAL SCRIPT -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.documentElement.style.visibility = "visible";
+      document.documentElement.style.opacity = "1";
+      document.documentElement.style.transition = "opacity 0.3s ease-in-out";
+    });
+  </script>
+</head>
+
+<body class="bg-black text-white">
+
+  <!-- ═══════════════════════════════════════
+       GLASS NAV
+       ═══════════════════════════════════════ -->
+  <nav id="glass-nav" class="glass-nav">
+    <div class="mx-auto flex max-w-7xl items-center justify-between">
+      <!-- Logo -->
+      <a href="/" class="flex items-center" id="nav-logo">
+        <h2 class="text-xl font-heading font-bold tracking-wider text-white uppercase md:text-2xl">
+          ZLENDER
+        </h2>
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="/" class="font-body text-sm font-medium text-white/80 transition-colors hover:text-white">Home</a>
+        <a href="/services/"
+          class="font-body text-sm font-medium text-white/80 transition-colors hover:text-white">Services</a>
+        <a href="/network/"
+          class="font-body text-sm font-medium text-white/80 transition-colors hover:text-white">Network</a>
+        <a href="/about-us/"
+          class="font-body text-sm font-medium text-white/80 transition-colors hover:text-white">About Us</a>
+      </div>
+
+      <!-- Desktop CTA -->
+      <div class="hidden md:block">
+        <a href="/contact-us/" class="cta-button">
+          REQUEST A QUOTE <span class="text-base">+</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button id="hamburger" class="hamburger md:hidden" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div id="mobile-nav" class="mobile-nav">
+    <a href="/">Home</a>
+    <a href="/services/">Services</a>
+    <a href="/network/">Network</a>
+    <a href="/about-us/">About Us</a>
+    <a href="/contact-us/" class="cta-button mt-4">
+      REQUEST A QUOTE <span class="text-base">+</span>
+    </a>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════════ -->
+  <section id="hero" class="hero">
+    <!-- Background Video -->
+    <div class="hero-video-bg">
+      <video class="lazy-video" data-src-mobile="./assets/website files/Phone Logo 50.mp4"
+        data-src-desktop="./assets/website files/Video To Plug 50.mp4" muted loop playsinline preload="none"
+        poster="./assets/website files/bbbbb.jpg"></video>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <h1 class="hero-title">ZLENDER</h1>
+      <p class="hero-subtitle">
+        A creative 3D studio focused on cartoon Animation,
+        3D modeling, and Game Development.
+      </p>
+      <div class="hero-cta">
+        <a href="/contact-us/" class="cta-button cta-button-filled">
+          REQUEST A QUOTE <span class="text-base">+</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       STATS BAR
+       ═══════════════════════════════════════ -->
+  <section id="stats" class="bg-card border-t border-b border-border">
+    <div class="mx-auto grid max-w-5xl grid-cols-1 gap-6 px-6 py-12 text-center sm:grid-cols-3">
+      <div data-animate>
+        <p class="font-heading text-4xl font-bold text-white md:text-5xl">5.0</p>
+        <p class="mt-2 font-body text-sm text-muted">Elite Client Rating</p>
+      </div>
+      <div data-animate>
+        <p class="font-heading text-4xl font-bold text-white md:text-5xl">100+</p>
+        <p class="mt-2 font-body text-sm text-muted">Completed Projects</p>
+      </div>
+      <div data-animate>
+        <p class="font-heading text-4xl font-bold text-white md:text-5xl">100%</p>
+        <p class="mt-2 font-body text-sm text-muted">Client Satisfaction Rate</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CLIENTS MARQUEE
+       ═══════════════════════════════════════ -->
+  <section id="clients" class="overflow-hidden bg-[#0A0A0A] py-10 border-b border-white/10 relative">
+    <div class="mx-auto flex max-w-7xl items-center px-6">
+
+      <!-- Stationary Text -->
+      <div class="relative z-10 bg-[#0A0A0A] pr-8 md:pr-12 lg:pr-16 shrink-0">
+        <h2 class="font-heading text-xl font-bold text-white uppercase tracking-widest md:text-3xl">OUR CLIENTS</h2>
+      </div>
+
+      <!-- Scrolling Marquee -->
+      <div class="relative flex flex-1 overflow-hidden mask-edges">
+        <div class="flex animate-marquee items-center gap-12 whitespace-nowrap pl-12 md:gap-20 md:pl-20">
+
+          <!-- Logo Set 1 -->
+          <img src="./assets/website files/1707397405_logocom.png" alt="Client 1"
+            class="h-10 object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="./assets/website files/ChatGPT Image Jan 11, 2026, 04_49_29 PM (1).png" alt="Client 2"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="./assets/website files/ChatGPT Image Jan 12, 2026, 11_56_33 AM (1).png" alt="Client 3"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="./assets/website files/ChatGPT Image Jan 12, 2026, 02_09_36 PM (1).png" alt="Client 4"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="./assets/website files/ChatGPT Image Jan 12, 2026, 12_07_20 PM (2) (2).png" alt="Client 5"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="./assets/website files/Freelancer_logo_og.png" alt="Freelancer"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="./assets/website files/Fiverr_Logo_09.2020.svg.png" alt="Fiverr"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+
+          <!-- Logo Set 2 (for seamless loop) -->
+          <img src="./assets/website files/1707397405_logocom.png" alt="Client 1"
+            class="h-10 object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="./assets/website files/ChatGPT Image Jan 11, 2026, 04_49_29 PM (1).png" alt="Client 2"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="./assets/website files/ChatGPT Image Jan 12, 2026, 11_56_33 AM (1).png" alt="Client 3"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="./assets/website files/ChatGPT Image Jan 12, 2026, 02_09_36 PM (1).png" alt="Client 4"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="./assets/website files/ChatGPT Image Jan 12, 2026, 12_07_20 PM (2) (2).png" alt="Client 5"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="./assets/website files/Freelancer_logo_og.png" alt="Freelancer"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+          <img src="./assets/website files/Fiverr_Logo_09.2020.svg.png" alt="Fiverr"
+            class="h-10 w-auto object-contain opacity-70 transition hover:opacity-100 md:h-12" />
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       BUILT TO CREATE — Value Proposition
+       ═══════════════════════════════════════ -->
+  <section id="built-to-create" class="section">
+    <p class="mb-4 text-center font-mono text-xs font-medium uppercase tracking-[0.25em] text-muted" data-animate>BUILT
+      TO CREATE</p>
+    <h2
+      class="mx-auto max-w-3xl text-center font-heading text-2xl font-bold leading-tight text-white md:text-4xl lg:text-5xl"
+      data-animate>
+      Exceptional visuals. Fast delivery. Real&nbsp;results. Work with a creative studio purpose-built to bring your
+      ideas to&nbsp;life.
+    </h2>
+
+    <!-- Stats cards -->
+    <div class="mx-auto mt-16 grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="rounded-3xl border border-border bg-card p-6" data-animate>
+        <p class="font-body text-sm text-muted">Projects successfully delivered across 3D animation, modeling, and game
+          development.</p>
+        <p class="mt-3 font-heading text-3xl font-bold text-white">200+</p>
+      </div>
+      <div class="rounded-3xl border border-border bg-card p-6" data-animate>
+        <p class="font-body text-sm text-muted">Perfect client rating with consistent five-star satisfaction. Never an
+          unsatisfied Client</p>
+        <p class="mt-3 font-heading text-3xl font-bold text-white">5.0 ★</p>
+      </div>
+      <div class="rounded-3xl border border-border bg-card p-6" data-animate>
+        <p class="font-body text-sm text-muted">Verified client reviews from real projects and long-term collaborations.
+        </p>
+        <p class="mt-3 font-heading text-3xl font-bold text-white">99+</p>
+      </div>
+      <div class="rounded-3xl border border-border bg-card p-6" data-animate>
+        <p class="font-body text-sm text-muted">Job completion rate — every project delivered, every commitment honored.
+        </p>
+        <p class="mt-3 font-heading text-3xl font-bold text-white">100%</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       WE OFFER — Services Overview
+       ═══════════════════════════════════════ -->
+  <section id="services" class="section-full bg-surface">
+    <div class="mx-auto max-w-7xl px-6">
+      <p class="mb-4 text-center font-mono text-xs font-medium uppercase tracking-[0.25em] text-muted" data-animate>WE
+        OFFER</p>
+      <h2 class="mb-6 text-center font-heading text-3xl font-bold text-white uppercase md:text-5xl" data-animate>
+        3D Animation, Modeling and<br />GAME DEVELOPMENT
+      </h2>
+      <p class="mx-auto mb-16 max-w-3xl text-center font-body text-base leading-relaxed text-muted" data-animate>
+        ZLENDER is a creative 3D studio delivering stylized cartoon animation, high quality 3D modeling, and complete
+        game development.
+        Our Team provides services from character and environment creation to animation and interactive gameplay.
+      </p>
+    </div>
+
+    <!-- ─── Game Development Card ─── -->
+    <div class="relative mb-4 overflow-hidden rounded-3xl border border-border bg-card mx-4 md:mx-8 lg:mx-16"
+      data-animate>
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="flex flex-col justify-center p-8 lg:p-12">
+          <h3 class="mb-6 font-heading text-2xl font-bold text-white uppercase md:text-4xl">Game Development</h3>
+          <p class="font-body text-sm leading-relaxed text-muted md:text-base">
+            Our game development services cover stylized and immersive experiences across indie,
+            casual, and mid-core projects for PC, mobile, and cross-platform builds. We support your
+            vision from early concept to final release, delivering custom gameplay systems, polished
+            mechanics, and optimized builds tailored to your platform and production goals.
+          </p>
+          <p class="mt-4 font-body text-sm leading-relaxed text-muted md:text-base">
+            Working with modern engines and efficient pipelines, our developers and artists collaborate
+            closely to prototype quickly, iterate intelligently, and refine gameplay without sacrificing performance
+            or visual quality.
+          </p>
+        </div>
+        <div class="relative aspect-video lg:aspect-auto">
+          <video class="lazy-video rounded-r-3xl" data-src="./assets/website files/5 30.mp4" muted loop playsinline
+            preload="none" poster="./assets/website files/game model.png"></video>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── 3D Animation Card ─── -->
+    <div class="relative mb-4 overflow-hidden rounded-3xl border border-border bg-card mx-4 md:mx-8 lg:mx-16"
+      data-animate>
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="relative aspect-video lg:aspect-auto lg:order-1">
+          <video class="lazy-video rounded-l-3xl" data-src="./assets/website files/Eagle Final 50.mp4" muted loop
+            playsinline preload="none" poster="./assets/website files/Screenshot_2024-10-22_033750.png"></video>
+        </div>
+        <div class="flex flex-col justify-center p-8 lg:order-2 lg:p-12">
+          <h3 class="mb-6 font-heading text-2xl font-bold text-white uppercase md:text-4xl">3D Animation Videos</h3>
+          <p class="font-body text-sm leading-relaxed text-muted md:text-base">
+            Our 3D animation services focus on creating expressive cartoon animations, cinematic sequences,
+            and character-driven content designed to engage and tell strong visual stories. From storyboards
+            and animatics to final renders, we handle the full animation pipeline with clarity and creative direction.
+          </p>
+          <p class="mt-4 font-body text-sm leading-relaxed text-muted md:text-base">
+            Whether you're producing animated shorts, brand characters, or narrative-driven content, we bring
+            movement, personality, and polish to every frame — delivering animations that are visually consistent,
+            emotionally engaging, and ready for production use across multiple platforms.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── Modeling & Design Card ─── -->
+    <div class="relative mb-4 overflow-hidden rounded-3xl border border-border bg-card mx-4 md:mx-8 lg:mx-16"
+      data-animate>
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="flex flex-col justify-center p-8 lg:p-12">
+          <h3 class="mb-6 font-heading text-2xl font-bold text-white uppercase md:text-4xl">Modeling &amp; Design</h3>
+          <p class="font-body text-sm leading-relaxed text-muted md:text-base">
+            Our 3D modeling services deliver high-quality, production-ready assets including characters, props,
+            and environments built for animation, games, and interactive experiences. We focus on clean topology,
+            optimized geometry, and detailed textures to ensure assets integrate into your pipeline.
+          </p>
+          <p class="mt-4 font-body text-sm leading-relaxed text-muted md:text-base">
+            From stylized cartoon models to detailed world-building assets, we create flexible 3D content that is
+            ready for rigging, animation, or real-time engines — helping you build rich, consistent worlds with
+            efficiency and precision.
+          </p>
+        </div>
+        <div class="relative aspect-video lg:aspect-auto">
+          <video class="lazy-video rounded-r-3xl" data-src="./assets/website files/4 30.mp4" muted loop playsinline
+            preload="none" poster="./assets/website files/Screenshot_2024-10-22_034310.png"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       HOW WE WORK
+       ═══════════════════════════════════════ -->
+  <section id="how-we-work" class="py-20" style="background: #F5F0EB;">
+    <div class="mx-auto max-w-7xl px-6">
+      <h2 class="mb-2 text-center font-heading text-3xl font-bold uppercase text-black md:text-5xl" data-animate>HOW WE
+        WORK</h2>
+      <div class="mx-auto mb-12 h-[3px] w-20 bg-black"></div>
+
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <!-- Creative Partnership -->
+        <div class="rounded-2xl border-2 border-black/10 bg-transparent p-6" data-animate>
+          <h3 class="mb-6 text-center font-heading text-lg font-bold uppercase tracking-wider text-black">Creative
+            Partnership</h3>
+          <ul class="space-y-4 font-body text-sm text-black/70">
+            <li class="flex items-start gap-2"><span class="mt-1 text-black">◆</span> A dedicated team focused
+              exclusively on your product</li>
+            <li class="flex items-start gap-2"><span class="mt-1 text-black">◆</span> Direct access to developers,
+              artists, and technical leads</li>
+            <li class="flex items-start gap-2"><span class="mt-1 text-black">◆</span> Flexible team size that adapts as
+              your project evolves</li>
+            <li class="flex items-start gap-2"><span class="mt-1 text-black">◆</span> Deep understanding of your vision
+              and long-term goals</li>
+            <li class="flex items-start gap-2"><span class="mt-1 text-black">◆</span> Full transparency over workflows,
+              tools, and decisions</li>
+          </ul>
+        </div>
+
+        <!-- Full Production Mode -->
+        <div class="rounded-2xl border-2 border-black/10 bg-transparent p-6" data-animate>
+          <h3 class="mb-6 text-center font-heading text-lg font-bold uppercase tracking-wider text-black">Full
+            Production Mode</h3>
+          <ul class="space-y-4 font-body text-sm text-black/70">
+            <li class="flex items-start gap-2"><span class="mt-1 text-black">◆</span> End-to-end ownership from planning
+              to final delivery</li>
+            <li class="flex items-start gap-2"><span class="mt-1 text-black">◆</span> Clearly defined scope, milestones,
+              and deadlines</li>
+            <li class="flex items-start gap-2"><span class="mt-1 text-black">◆</span> Single project lead managing the
+              entire pipeline</li>
+            <li class="flex items-start gap-2"><span class="mt-1 text-black">◆</span> Responsibility for quality,
+              performance, and polish</li>
+            <li class="flex items-start gap-2"><span class="mt-1 text-black">◆</span> Structured production process with
+              reliable outcomes</li>
+          </ul>
+        </div>
+
+        <!-- Specialist Extension -->
+        <div class="rounded-2xl border-2 border-black/10 bg-transparent p-6" data-animate>
+          <h3 class="mb-6 text-center font-heading text-lg font-bold uppercase tracking-wider text-black">Specialist
+            Extension</h3>
+          <ul class="space-y-4 font-body text-sm text-black/70">
+            <li class="flex items-start gap-2"><span class="mt-1 text-black">◆</span> Hand-picked experts added to your
+              existing team</li>
+            <li class="flex items-start gap-2"><span class="mt-1 text-black">◆</span> Seamless integration into your
+              tools and pipeline</li>
+            <li class="flex items-start gap-2"><span class="mt-1 text-black">◆</span> You retain full creative and
+              project control</li>
+            <li class="flex items-start gap-2"><span class="mt-1 text-black">◆</span> Cost-efficient solution for
+              specific skill requirements</li>
+            <li class="flex items-start gap-2"><span class="mt-1 text-black">◆</span> Ideal for tight deadlines, feature
+              sprints, or scaling phases</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT US
+       ═══════════════════════════════════════ -->
+  <section id="about" class="section bg-surface">
+    <div class="mx-auto max-w-3xl text-center" data-animate>
+      <h2 class="mb-6 font-heading text-3xl font-bold text-white uppercase md:text-5xl">About Us</h2>
+      <p class="font-body text-base leading-relaxed text-muted md:text-lg">
+        ZLENDER is a creative 3D studio specializing in cartoon animation, high-quality 3D modeling, and full game
+        development.
+        From concept to launch, we're a Top 1% freelancer with a 100% completion rate and 5-star client satisfaction.
+        We bring ideas to life through powerful visuals, animations, and videos that convert and impress.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTACT FORM
+       ═══════════════════════════════════════ -->
+  <section id="contact" class="section bg-card">
+    <div class="mx-auto max-w-2xl">
+      <h2 class="mb-2 text-center font-heading text-3xl font-bold text-white uppercase md:text-4xl" data-animate>REQUEST
+        A PROJECT QUOTE</h2>
+      <p class="mb-10 text-center font-body text-sm text-muted" data-animate>
+        Let's Bring Your Idea to Life. Tell us about your project and goals. Our team will review your requirements
+        and get back to you with a clear plan, timeline, and cost estimate — no surprises, no commitments.
+      </p>
+
+      <iframe name="hidden_iframe_contact" id="hidden_iframe_contact" style="display:none;"
+        onload="if(this.submitted) { window.showSuccessPopup('Thank you! Your project quote request has been received.'); this.submitted=false; document.getElementById('contact-form').reset(); }"></iframe>
+      <form id="contact-form"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSeZA01aOnXrqvzL4pC2diIDxa7UDMcYoc6qvo4DHzyAk2QB1g/formResponse"
+        method="POST" target="hidden_iframe_contact"
+        onsubmit="const hp = document.getElementById('confirm_email_contact'); if(hp && hp.value !== '') { return false; } if(!window.checkRateLimit('contact-form')) { return false; } document.getElementById('hidden_iframe_contact').submitted=true;"
+        class="space-y-5" data-animate>
+
+        <!-- BOT HONEYPOT -->
+        <div style="display:none;" aria-hidden="true">
+          <label for="confirm_email_contact">Leave this field empty</label>
+          <input type="text" id="confirm_email_contact" name="confirm_email" tabindex="-1" />
+        </div>
+        <div>
+          <label for="name"
+            class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Name</label>
+          <input id="name" name="entry.1227890993" type="text" required
+            class="w-full rounded-xl border border-border bg-surface px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30 focus:ring-1 focus:ring-white/10"
+            placeholder="Your full name" />
+        </div>
+        <div>
+          <label for="email"
+            class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Email</label>
+          <input id="email" name="entry.1316634230" type="email" required
+            class="w-full rounded-xl border border-border bg-surface px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30 focus:ring-1 focus:ring-white/10"
+            placeholder="you@example.com" />
+        </div>
+        <div>
+          <label for="project-title"
+            class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Project Title</label>
+          <input id="project-title" name="entry.1856353974" type="text" required
+            class="w-full rounded-xl border border-border bg-surface px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30 focus:ring-1 focus:ring-white/10"
+            placeholder="e.g. Game Character Design" />
+        </div>
+        <div>
+          <label for="details"
+            class="mb-1 block font-body text-xs font-medium uppercase tracking-wider text-muted">Project Details</label>
+          <textarea id="details" name="entry.1398881846" rows="5" required
+            class="w-full resize-none rounded-xl border border-border bg-surface px-4 py-3 font-body text-sm text-white placeholder-muted/50 outline-none transition focus:border-white/30 focus:ring-1 focus:ring-white/10"
+            placeholder="Tell us about your project, goals, and timeline..."></textarea>
+        </div>
+        <div class="flex items-center gap-3">
+          <input id="newsletter" name="newsletter" type="checkbox"
+            class="h-4 w-4 rounded border-border bg-surface accent-white" />
+          <label for="newsletter" class="font-body text-xs text-muted">Subscribe to Newsletter</label>
+        </div>
+        <button type="submit" class="cta-button cta-button-filled w-full justify-center py-3 text-sm">
+          Submit
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════ -->
+  <footer class="border-t border-border bg-surface py-12">
+    <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 md:grid-cols-4">
+      <!-- Brand -->
+      <div>
+        <h2 class="mb-4 font-heading text-2xl font-bold text-white uppercase">ZLENDER</h2>
+        <p class="font-body text-sm text-muted">Creative 3D studio specializing in animation, modeling, and game
+          development.</p>
+      </div>
+      <!-- Links Col 1 -->
+      <div>
+        <h4 class="mb-4 font-heading text-xs font-bold uppercase tracking-wider text-white">Navigation</h4>
+        <ul class="space-y-2 font-body text-sm text-muted">
+          <li><a href="/services/" class="transition hover:text-white">Services</a></li>
+          <li><a href="/network/" class="transition hover:text-white">Network</a></li>
+          <li><a href="/about-us/" class="transition hover:text-white">About Us</a></li>
+          <li><a href="/contact-us/" class="transition hover:text-white">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Links Col 2 -->
+      <div>
+        <h4 class="mb-4 font-heading text-xs font-bold uppercase tracking-wider text-white">Platforms</h4>
+        <ul class="space-y-2 font-body text-sm text-muted">
+          <li><a href="https://wa.me/971542141050" target="_blank" rel="noopener"
+              class="transition hover:text-white">WhatsApp</a></li>
+          <li><a href="https://www.freelancer.com/u/ZlenderShop" target="_blank" rel="noopener"
+              class="transition hover:text-white">Freelancer Page</a></li>
+        </ul>
+      </div>
+      <!-- Social -->
+      <div>
+        <h4 class="mb-4 font-heading text-xs font-bold uppercase tracking-wider text-white">Social</h4>
+        <div class="flex gap-4">
+          <a href="https://www.instagram.com/zlender.studio/" target="_blank" rel="noopener" aria-label="Instagram"
+            class="flex h-10 w-10 items-center justify-center rounded-full border border-border transition hover:border-white/30">
+            <img src="./assets/website files/Instagram_icon.png" alt="Instagram" class="h-5 w-5 object-contain" />
+          </a>
+          <a href="https://www.tiktok.com/@zlender.studio" target="_blank" rel="noopener" aria-label="TikTok"
+            class="flex h-10 w-10 items-center justify-center rounded-full border border-border transition hover:border-white/30">
+            <img src="./assets/website files/tiktok-logo-tik-tok-logo-icon-png-svg.png" alt="TikTok"
+              class="h-5 w-5 object-contain" />
+          </a>
+          <a href="https://wa.me/971542141050" target="_blank" rel="noopener" aria-label="WhatsApp"
+            class="flex h-10 w-10 items-center justify-center rounded-full border border-border transition hover:border-white/30">
+            <img src="./assets/website files/whatsapp-logo-png_seeklogo-168310 (1).png" alt="WhatsApp"
+              class="h-5 w-5 object-contain" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto mt-10 max-w-7xl border-t border-border px-6 pt-6">
+      <p class="text-center font-body text-xs text-muted">© 2026 Zlender Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Network section (Freelancer badge / About-Us bridge) -->
+  <span id="network"></span>
+
+</body>
+
+</html>

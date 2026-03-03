@@ -1,0 +1,73 @@
+Project Name: Zlender Studio - Clean-Room Rebuild
+Production Target: Vercel
+Design Foundation: Magnetto / High-Contrast 3D Portfolio
+
+🎨 DATA INVENTORY (SOURCE OF TRUTH)
+The agent must use these exact specifications to ensure brand continuity.
+
+1. Typography (The "Slender" Look)
+Primary Heading (H1/H2): Slender (Custom) or Clash Display (Variable).
+
+Agent Action: Check local /assets for .woff2/.ttf. If missing, use https://fonts.cdnfonts.com/css/slender or Google Font: "Syne" (Extra Bold) as the performance-optimized fallback.
+
+Body & UI: Inter (Variable).
+
+Weights: 400 (Body), 600 (Semibold UI).
+
+Accent/Detail: JetBrains Mono or Space Mono.
+
+2. Color Palette (Dark Mode Mastery)
+Surface: #000000 (Pure Black)
+
+Cards: #0A0A0A (Elevated Black)
+
+Primary Text: #FFFFFF (White)
+
+Secondary Text: #A1A1A1 (Muted Gray)
+
+Accent Border: rgba(255, 255, 255, 0.08) (Thin Glassmorphism)
+
+🛠 PHASE 1: ASSET INTELLIGENCE & RECOGNITION
+Local Folder Scan: Index all files in /assets. Match filenames (e.g., hero_video.mp4) to the sections on zlender.studio.
+
+Asset replacement: If the live site uses a .gif but a high-res .mp4 exists in the assets folder, always prioritize the .mp4.
+
+🧬 PHASE 2: REVERSE-ENGINEERING ANIMATIONS
+Scroll Logic: Replicate the "Smooth Scroll" feel.
+
+Agent Action: Use Lenis (Vanilla JS) or Framer Motion for scroll-driven animations.
+
+Intersection Observer Logic (CRITICAL):
+
+Pro-Tip Implementation: Do not load all 10+ videos on page load.
+
+Task: Create a lazy-load wrapper. Video elements must remain in a "paused" state with preload="none" until they enter the viewport.
+
+Tag Config: <video muted loop playsinline poster="fallback.jpg" class="lazy-video">.
+
+🚀 PHASE 3: THE "OPTIMIZED" BUILD
+Tailwind Architecture: Generate a tailwind.config.js using the colors and fonts from the Data Inventory.
+
+Component Rebuild:
+
+Hero: Center the "Zlender" branding over the primary loop.
+
+Work Grid: Use a staggered CSS grid (Aspect Ratio 16/9 for video previews).
+
+Glass Nav: Implement a backdrop-filter: blur(12px) sticky header.
+
+Performance Check: Ensure 0 external tracking scripts. Remove all Framer-specific "site-builder" bloat.
+
+🔗 PHASE 4: VERCEL & DOMAIN PLUMBING
+Contact Form: The original host is gone. Replace with a standard <form> pointing to Formspree (or a local Vercel Function).
+
+Domain Mapping: Generate the vercel.json config.
+
+SEO: Migrate all Meta Tags and OpenGraph data from the live site.
+
+🛑 AGENT GUARDRAILS (STRICT)
+NO IFRAMES: Everything must be native code.
+
+NO ABSOLUTE URLS: All asset paths must be ./assets/....
+
+MOBILE FIRST: The site must be tested at 390px width before any 4K optimizations are made.
