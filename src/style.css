@@ -323,3 +323,62 @@
     transform: translateX(-50%);
   }
 }
+
+/* ─── Video Fallback — ensure visibility if IntersectionObserver fails ─── */
+video {
+  opacity: 1 !important;
+}
+
+/* ─── Mobile Stats / Card Overlap Fix (390px–430px) ─── */
+@media (max-width: 480px) {
+
+  /* Stats bar containers */
+  #stats>div,
+  #stats .grid>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: fit-content;
+    padding: 1.5rem 1rem;
+    gap: 0.5rem;
+  }
+
+  /* Stat numbers — clamp to prevent overflow */
+  #stats .font-heading,
+  #built-to-create .font-heading {
+    font-size: clamp(2rem, 8vw, 4rem);
+    line-height: 1.2;
+    word-break: break-word;
+  }
+
+  /* "Built to Create" stat cards */
+  #built-to-create .grid>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    min-height: fit-content;
+    padding: 2rem 1.25rem;
+    gap: 0.75rem;
+  }
+
+  /* Ensure stat descriptions don't touch numbers */
+  #stats .font-body,
+  #built-to-create .font-body {
+    margin-top: 0;
+  }
+}
+
+/* ─── Footer mobile overlap prevention ─── */
+@media (max-width: 480px) {
+  footer .grid {
+    gap: 2rem;
+  }
+
+  footer .flex.gap-4 {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+}
